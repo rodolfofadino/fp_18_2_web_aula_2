@@ -12,6 +12,12 @@ namespace Fiap01.Models
 
         [Required]
         public string Descricao { get; set; }
+        [DataType(DataType.Password)]
         public string Autor { get; set; }
+
+        public override string ToString()
+        {
+            return Descricao;
+        }
     }
 }

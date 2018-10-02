@@ -25,7 +25,7 @@ namespace Fiap01.Controllers
 
             ////Imaginem um acesso ao DB
             //var pergunta = new Pergunta() { Id = 1, Descricao = "Que horas é a chamada?", Autor = "Daniel" };
-            
+
             return View(_context.Perguntas.ToList());
         }
         [HttpGet]
